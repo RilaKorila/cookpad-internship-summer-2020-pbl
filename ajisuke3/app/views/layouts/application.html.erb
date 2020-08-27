@@ -7,6 +7,7 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/3f27712743.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -24,10 +25,10 @@
           <%= link_to 'マイページ', user_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-                <%= link_to '味付け登録', new_recipe_path, class: "nav-link" %>
+                <%= link_to '味付け登録', new_taste_path, class: "nav-link" %>
             </li>
             <li class="nav-item">
-                <%= link_to '味付け一覧', recipes_path, class: "nav-link" %>
+                <%= link_to '味付け一覧', tastes_path, class: "nav-link" %>
             </li>
             <li class="nav-item">
               <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav-link" %>

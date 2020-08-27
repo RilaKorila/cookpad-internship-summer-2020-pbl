@@ -5,12 +5,25 @@
         <thead class="thead-dark">
           <tr>
             <th scope="col">食材</th>
+            <th scope="col"></th>
           </tr>
         </thead>
         <tbody>
           <% @foods.each do |food| %>
             <tr>
               <td><%= link_to food.food_name, food_path(food) %></td>
+              <td>
+                <% if current_user.already_favorited?(food) %>
+                  <%= link_to  food_favorites_path(food), method: :delete  do %>
+                    <i class="fas fa-heart"></i>
+                  <% end %>
+                <% else %>
+                  <%= link_to food_favorites_path(food), method: :post  do %>
+                    <i class="far fa-heart"></i>
+                  <% end %>
+                <% end %>
+                  <%= food.favorites.count %>
+              </td>
             </tr>
           <% end %>
         </tbody>
