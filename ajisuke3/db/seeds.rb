@@ -15,6 +15,15 @@ Food.create!(
    food_name: 'にんじん',
 )
 Food.create!(
+   food_name: 'なす',
+)
+Food.create!(
+   food_name: 'ぶり',
+)
+Food.create!(
+   food_name: '豚バラ',
+)
+Food.create!(
    food_name: 'だいこん',
 )
 
@@ -25,4 +34,25 @@ Taste.create!(
     みりん　 大1
     酒　　　 大1
     さとう　 小2'
+)
+
+Taste.create!(
+    title: 'みそ炒め',
+    body: 'みそ　　 大1
+    酒　　　 大1
+    さとう　 小1
+    しょうゆ 小1'
+)
+
+Taste.create!(
+    title: 'オイマヨ',
+    body: 'オイスターソース 大1
+    マヨネーズ　　　 大1'
+)
+
+Taste.create!(
+    title: 'たらこじょうゆ',
+    body: 'たらこ　 大2
+    酒　　　 小2
+    塩　　　 小1'
 )
