@@ -6,7 +6,7 @@ class TastesController < ApplicationController
   end
 
   def show
-    @taste =  Taste.find(params[:id])
+    @taste = Taste.find(params[:id])
   end
 
   def new

@@ -7,26 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# Foodテーブル
-Food.create!(
-   food_name: '鶏肉　もも',
-)
-Food.create!(
-   food_name: 'にんじん',
-)
-Food.create!(
-   food_name: 'なす',
-)
-Food.create!(
-   food_name: 'ぶり',
-)
-Food.create!(
-   food_name: '豚バラ',
-)
-Food.create!(
-   food_name: 'だいこん',
-)
-
 # Tasteテーブル
 Taste.create!(
     title: 'テリヤキ',
@@ -55,4 +35,32 @@ Taste.create!(
     body: 'たらこ　 大2
     酒　　　 小2
     塩　　　 小1'
+)
+
+# favorite Table
+# Favorite.create!(
+#    user_id: 1,
+#    food_id: 1,
+#    taste_id: 1
+# )
+
+
+# Foodテーブル
+Food.create!(
+   food_name: '鶏肉　もも'
+)
+Food.create!(
+   food_name: 'にんじん'
+)
+Food.create!(
+   food_name: 'なす'
+)
+Food.create!(
+   food_name: 'ぶり'
+)
+Food.create!(
+   food_name: '豚バラ'
+)
+Food.create!(
+   food_name: 'だいこん'
 )

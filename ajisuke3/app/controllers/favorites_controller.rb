@@ -1,4 +1,8 @@
 class FavoritesController < ApplicationController
+    # def show
+    #     @favorite = Favorite.find(params[:id])
+    # end
+
     def create
         # current_user.favorites.create : current_userに結びついたいいねを取得 
         # →　あとは、どのレシピにいいねをしたか記録
