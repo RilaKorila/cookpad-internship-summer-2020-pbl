@@ -47,7 +47,7 @@ Taste.create!(
 
 # Foodテーブル
 Food.create!(
-   food_name: '鶏肉　もも'
+   food_name: 'キャベツ'
 )
 Food.create!(
    food_name: 'にんじん'
@@ -56,11 +56,35 @@ Food.create!(
    food_name: 'なす'
 )
 Food.create!(
-   food_name: 'ぶり'
+   food_name: 'かぼちゃ'
+)
+Food.create!(
+   food_name: 'トマト'
+)
+Food.create!(
+   food_name: 'だいこん'
+)
+Food.create!(
+   food_name: 'アスパラガス'
+)
+Food.create!(
+   food_name: '鶏肉　もも'
+)
+Food.create!(
+   food_name: '鶏肉　ささみ'
 )
 Food.create!(
    food_name: '豚バラ'
 )
 Food.create!(
-   food_name: 'だいこん'
+   food_name: 'マグロ'
+)
+Food.create!(
+   food_name: 'カンパチ'
+)
+Food.create!(
+   food_name: 'アジ'
+)
+Food.create!(
+   food_name: 'イワシ'
 )
