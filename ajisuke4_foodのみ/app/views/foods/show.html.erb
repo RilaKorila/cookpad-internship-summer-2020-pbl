@@ -1,0 +1,38 @@
+# group byでtasteごとに分ける
+# name をmapしてunique
+<div class="row">
+    <div class="col-10 mx-auto">
+    　<h3><%= @food.food_name %>で人気の味付け</h3>
+　　    <div class="card"> 
+　　　　　　<table class="table table-hover">
+        　<thead class="thead-dark">
+          　<tr>
+            　<th scope="col">おすすめ味つけ</th>
+            　<th scope="col"></th>
+          　</tr>
+        　</thead>
+        　<tbody>
+        　<% @tastes.each do |taste| %>
+            <tr>
+              <td><%= link_to taste.title, taste_path(taste)  %></td>
+              <td>
+            <% if current_user.already_favorited?(@food) %>
+            <%= link_to food_favorites_path(@food, taste_id:taste), method: :delete  do %>
+              <i class="fas fa-heart"></i>
+            <% end %>
+            <% else %>
+            <%= link_to food_favorites_path(@food, taste_id:taste), method: :post  do %>
+                <i class="far fa-heart"></i>
+              <% end %>  
+            <% end %>
+              <%= @food.favorites.count %>
+          </td>
+              <td></td>
+            </tr>
+            <% end %>
+        </tbody>
+     </table>
+     </div>
+  </div>
+</div>
+

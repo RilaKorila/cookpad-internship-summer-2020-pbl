@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-10 mx-auto">
+    <h3>味付けから探す</h3>
+    <table class="table table-hover">
+        <thead class="thead-dark">
+        
+          <tr>
+            <th scope="col">味付け</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @tastes.each do |taste| %>
+            <tr>
+              <td><%= link_to taste.title, taste_path(taste) %></td>
+            </tr>
+          <% end %>
+        </tbody>
+     </table>
+     </div>
+  </div>
+</div>
+
