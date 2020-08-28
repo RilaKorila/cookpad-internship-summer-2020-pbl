@@ -22,19 +22,8 @@
           <% @foods.each do |food| %>
             <tr>
               <td><%= link_to food.food_name, food_path(food)  %></td>
-              
-                <td>
-            <% if current_user.already_favorited?(food) %>
-            <%= link_to food_favorites_path(food, taste_id:1), method: :delete  do %>
-              <i class="fas fa-heart"></i>
-            <% end %>
-            <% else %>
-            <%= link_to food_favorites_path(food, taste_id:1), method: :post  do %>
-                <i class="far fa-heart"></i>
-              <% end %>  
-            <% end %>
-              <%= food.favorites.count %>
-          </td>
+              <td></td>
+            
                       </tr>
           <% end %>
         </tbody>
